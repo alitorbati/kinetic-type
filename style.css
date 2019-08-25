@@ -2,16 +2,12 @@
   margin: 0;
 }
 
-/* html {
-  background-color: black;
-} */
-
-.inputs {
-  /* position: fixed; */
+.window {
   top: 10px;
   left: 10px;
-  padding: 10px;
-  background: white;
+  position: fixed;
+  display: block;
+  font-family: monospace;
 }
 
 .header {
@@ -23,19 +19,19 @@
   cursor: move;
 }
 
+.inputs {
+  padding: 10px;
+  background: white;
+}
+
 label {
   display: block;
   margin-bottom: 5px;
 }
+
 input {
   display: block;
   margin-bottom: 10px;
-}
-
-.window {
-  position: fixed;
-  display: block;
-  font-family: monospace;
 }
 
 .hidden {

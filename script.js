@@ -7,6 +7,8 @@ let speedSlider
 let springSlider
 let ampXSlider
 let ampYSlider
+let textColorInput
+let bgColorInput
 
 function setup() {
   frameRate(30)
@@ -19,15 +21,17 @@ function setup() {
   springSlider = document.getElementById('springSlider')
   ampXSlider = document.getElementById('ampXSlider')
   ampYSlider = document.getElementById('ampYSlider')
+  textColorInput = document.getElementById('textColorInput')
+  bgColorInput = document.getElementById('bgColorInput')
 }
 
 function draw() {
   const stringWidth = textWidth(textInput.value)
   const textSize = (width / stringWidth) * 10
 
-  background(0)
-  pg.background(0)
-  pg.fill(255)
+  background(bgColorInput.value)
+  pg.background(bgColorInput.value)
+  pg.fill(textColorInput.value)
   pg.textSize(textSize)
   pg.applyMatrix()
   pg.translate(width / 2, height / 2)
@@ -78,9 +82,3 @@ function draw() {
     }
   }
 }
-
-// const toggle = document.getElementById('collapse')
-// toggle.addEventListener('click', toggleControls)
-// function toggleControls () {
-//   toggle.classList
-// }
