@@ -1,0 +1,22 @@
+* { margin: 0; }
+
+/* html {
+  background-color: black;
+} */
+
+.inputs {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  background: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input {
+  display: block;
+  margin-bottom: 20px;
+}
