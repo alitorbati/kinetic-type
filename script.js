@@ -9,6 +9,8 @@ let ampXSlider
 let ampYSlider
 let textColorInput
 let bgColorInput
+let gradientStartInput = document.getElementById('gradientStartInput')
+let gradientEndInput = document.getElementById('gradientEndInput')
 
 function setup() {
   frameRate(30)
@@ -82,3 +84,11 @@ function draw() {
     }
   }
 }
+
+// gradientStartInput.addEventListener('input', assignStyle)
+// gradientEndInput.addEventListener('input', assignStyle)
+
+// function assignStyle () {
+//   someElement.style.backgroundImage = `linear-gradient( ${gradientStartInput}, ${gradientEndInput} )`
+// }
+

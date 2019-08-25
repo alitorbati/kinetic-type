@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+/* html {
+  background-image: linear-gradient( #3A72FD , #4C4BC7 );
+} */
+
 .window {
   top: 10px;
   left: 10px;
