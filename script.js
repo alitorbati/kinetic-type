@@ -78,3 +78,9 @@ function draw() {
     }
   }
 }
+
+// const toggle = document.getElementById('collapse')
+// toggle.addEventListener('click', toggleControls)
+// function toggleControls () {
+//   toggle.classList
+// }
