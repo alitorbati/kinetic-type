@@ -1,40 +1,54 @@
-<link rel="stylesheet" href="./style.css">
+<!DOCTYPE html>
+<html>
 
-<div class='window'>
-  <div class='header'>Controls</div>
-  <!-- <div id='collapse'>Hide</div> -->
-  <div class='inputs'>
-    <label for='textInput'>Text</label>
-    <!-- <textarea id='textInput' type="text">Aa</textarea> -->
-    <input id='textInput' type="text" value='Aa'>
-    <label for='tilesSlider'>Tiles</label>
-    <input id='tilesSlider' type="Range" min="1" max="64" step="1" value='16'>
-    <label for='speedSlider'>Speed</label>
-    <input id='speedSlider' type="range" min="0" max="10" step="1" value='2'>
-    <label for='springSlider'>Spring</label>
-    <input id='springSlider' type="range" min="0" max="10" step="1" value='7'>
-    <label for='ampXSlider'>X Amplitude</label>
-    <input id='ampXSlider' type="range" min="0" max="100" step="1" value='30'>
-    <label for='ampYSlider'>Y Amplitude</label>
-    <input id='ampYSlider' type="range" min="0" max="400" step="1" value='100'>
-    <label for='textColorInput'>Text Color</label>
-    <input id='textColorInput' type="color" value='#ffffff'>
-    <label for='bgColorInput'>Background Color</label>
-    <input id='bgColorInput' type="color" value='#000000'>
-    <!-- <label for='gradientStartInput'>Gradient Start</label>
+<head>
+
+  <title>Kinetic Type</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./p5.js"></script>
+  <script src="./p5.dom.js"></script>
+  <script src="./script.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+
+  <div class='window'>
+    <div class='header'>Controls</div>
+    <!-- <div id='collapse'>Hide</div> -->
+    <div class='inputs'>
+      <label for='textInput'>Text</label>
+      <!-- <textarea id='textInput' type="text">Aa</textarea> -->
+      <input id='textInput' type="text" value='Aa'>
+      <label for='tilesSlider'>Tiles</label>
+      <input id='tilesSlider' type="Range" min="1" max="64" step="1" value='16'>
+      <label for='speedSlider'>Speed</label>
+      <input id='speedSlider' type="range" min="0" max="10" step="1" value='2'>
+      <label for='springSlider'>Spring</label>
+      <input id='springSlider' type="range" min="0" max="10" step="1" value='7'>
+      <label for='ampXSlider'>X Amplitude</label>
+      <input id='ampXSlider' type="range" min="0" max="100" step="1" value='30'>
+      <label for='ampYSlider'>Y Amplitude</label>
+      <input id='ampYSlider' type="range" min="0" max="400" step="1" value='100'>
+      <label for='textColorInput'>Text Color</label>
+      <input id='textColorInput' type="color" value='#ffffff'>
+      <label for='bgColorInput'>Background Color</label>
+      <input id='bgColorInput' type="color" value='#000000'>
+      <!-- <label for='gradientStartInput'>Gradient Start</label>
     <input id='gradientStartInput' type="color" value='#3A72FD'>
     <label for='gradientEndInput'>Gradient End</label>
     <input id='gradientEndInput' type="color" value='#4C4BC7'> -->
+    </div>
   </div>
-</div>
 
-<script src="./p5.js"></script>
-<script src="./p5.dom.js"></script>
-<script src="./script.js"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script>
-  $(".window").draggable({
-    handle: ".header"
-  });
-</script>
+  <script>
+    $(".window").draggable({
+      handle: ".header"
+    });
+  </script>
+
+</body>
+
+</html>
